@@ -1,0 +1,136 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+
+    background-image: linear-gradient(-45deg, rgb(98, 0, 98), rgb(171, 0, 0));
+}
+
+body section{
+
+    height: 100%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ? styling all child of section */
+section > *{
+    position: absolute;
+    transition: 0.5s;
+
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 10px 20px;
+
+    border-radius: 20px;
+    cursor: pointer;
+
+}
+
+section > *:hover{
+    background-color: rgb(255, 255, 255);
+}
+
+section > *:active{
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+/* ? Main cosntainer styling */
+.main-container{
+    width: 800px;
+    height: 80vh;
+
+    padding: 0px;
+    overflow: hidden;
+
+    color: white;
+
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+
+    display: flex;
+}
+
+.main-container > *{
+    width: 50%;
+    text-align: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+
+}
+
+.main-container:hover{
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* ? styling to left section of main container */
+.left p{
+    padding: 20px 30px;
+    background-color:rgba(255, 255, 255, 0.2);
+    border-radius:7px ;
+}
+.left p span{
+    font-size: 30px;
+}
+
+/* ? styling to right section of main container */
+.right p{
+    padding: 20px 30px;
+    background-color:rgba(255, 255, 255, 0.2);
+    border-radius:7px ;
+}
+
+.right p span{
+    font-size: 30px;
+}
+
+/* ? individual styling to button in section */
+.new-game{
+    top: 20vh;
+}
+
+.dice{
+    top: 40vh;
+
+    height: 100px;
+    width: 100px;
+
+    padding: 0px;
+    background-color: transparent;
+}
+
+.dice img{
+    width: 100%;
+    height: 100%;
+
+
+}
+
+.roll-dice{
+    top: 65vh;
+}
+
+.hold{
+    top: 75vh;
+}
+
+/* ? media query for hinding body when screen size is less then 1000px  */
+@media screen and (max-width:1000px) {
+    body{
+        display: none;
+    }
+}
+
+/* ? class for javaScript */
+
+.active{
+    background-color: rgba(255, 255, 255, 0.3);
+}
